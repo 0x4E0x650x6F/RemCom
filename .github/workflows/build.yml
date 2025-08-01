@@ -17,6 +17,11 @@ jobs:
 
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
+   
+    - name: Install Windows 8.1 SDK
+      run: |
+        Invoke-WebRequest -Uri "https://go.microsoft.com/fwlink/p/?linkid=323507" -OutFile Win81SDK.exe
+        Start-Process .\Win81SDK.exe -ArgumentList "/quiet" -Wait -NoNewWindow
 
     - name: Build Solution
       run: msbuild "Remote Command Executor.sln" /p:Configuration=Release
