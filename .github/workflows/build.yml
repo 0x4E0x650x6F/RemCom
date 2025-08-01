@@ -24,5 +24,5 @@ jobs:
         Start-Process .\Win81SDK.exe -ArgumentList "/quiet" -Wait -NoNewWindow
 
     - name: Build Solution
-      run: msbuild "Remote Command Executor.sln" /p:Configuration=Release /p:Platform=${{ matrix.platform }} /p:PreferredToolArchitecture=x86 /p:WindowsTargetPlatformVersion=10.0
+      run: msbuild "Remote Command Executor.sln" /p:Configuration=Release /p:PreferredToolArchitecture=x86 /p:WindowsTargetPlatformVersion=10.0
 
