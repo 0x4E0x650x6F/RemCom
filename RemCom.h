@@ -48,10 +48,10 @@
 #define RemComSVCEXE     _T("RemComSvc.exe")
 #define ProcComs         _T("ProcComs.bin")
 
-#define RemComCOMM           _T("RemCom_communicaton")
-#define RemComSTDOUT         _T("RemCom_stdout")
-#define RemComSTDIN          _T("RemCom_stdin")
-#define RemComSTDERR         _T("RemCom_stderr")
+#define RemComCOMM           _T("WindowsUpdate_communicaton")
+#define RemComSTDOUT         _T("WindowsUpdate_stdout")
+#define RemComSTDIN          _T("WindowsUpdate_stdin")
+#define RemComSTDERR         _T("WindowsUpdate_stderr")
 
 #define Out(x)       { _ftprintf( stdout, _T("%s"), x); fflush(stdout); }
 #define Error(x)        { _ftprintf( stderr, _T("%s"), x); fflush(stderr); }
