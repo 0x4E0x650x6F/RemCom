@@ -19,5 +19,5 @@ jobs:
       uses: microsoft/setup-msbuild@v2
 
     - name: Build Solution
-      run: msbuild path/to/YourProject.sln /p:Configuration=Release
+      run: msbuild Remote\ Command\ Executor.sln /p:Configuration=Release
 
