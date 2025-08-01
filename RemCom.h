@@ -56,6 +56,9 @@
 #define Out(x)       { _ftprintf( stdout, _T("%s"), x); fflush(stdout); }
 #define Error(x)        { _ftprintf( stderr, _T("%s"), x); fflush(stderr); }
 
+#pragma comment(lib, "Advapi32.lib")
+#pragma comment(lib, "User32.lib")
+
 class RemComMessage
 {
 public:
